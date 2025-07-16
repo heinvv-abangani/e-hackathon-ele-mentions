@@ -267,13 +267,13 @@ const InsightsBoard = () => {
                  >
                   <button
                     onClick={() => toggleTheme(theme.title)}
-                    className="w-full flex items-center justify-between mb-6 text-left group"
+                    className="w-full flex items-center justify-between mb-6 text-left hover:bg-muted/30 rounded-lg p-2 -m-2 transition-colors duration-200"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="p-3 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl group-hover:scale-110 transition-transform duration-200">
-                        <IconComponent className={`w-6 h-6 ${theme.color} group-hover:scale-110 transition-transform duration-200`} />
+                      <div className="p-3 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl hover:scale-110 transition-transform duration-200">
+                        <IconComponent className={`w-6 h-6 ${theme.color} hover:scale-110 transition-transform duration-200`} />
                       </div>
-                      <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-200">
+                      <h3 className="text-2xl font-bold text-foreground hover:text-primary transition-colors duration-200">
                         {theme.title}
                       </h3>
                     </div>
@@ -282,15 +282,15 @@ const InsightsBoard = () => {
                         {theme.subThemes.length} {theme.subThemes.length === 1 ? 'topic' : 'topics'}
                       </span>
                       {isExpanded ? (
-                        <ChevronUp className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
+                        <ChevronUp className="w-6 h-6 text-muted-foreground hover:text-primary transition-colors" />
                       ) : (
-                        <ChevronDown className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
+                        <ChevronDown className="w-6 h-6 text-muted-foreground hover:text-primary transition-colors" />
                       )}
                     </div>
                   </button>
 
                   {isExpanded && (
-                    <div className="space-y-8 animate-in slide-in-from-top-2 duration-300">
+                    <div className="space-y-8 transition-all duration-300 ease-in-out animate-fade-in">
                       {theme.subThemes.map((subTheme, subIndex) => {
                         const SentimentIcon = getSentimentIcon(subTheme.sentiment);
                         
