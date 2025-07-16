@@ -1,25 +1,4 @@
 import { useState } from 'react';
-import { 
-  Calendar,
-  ExternalLink, 
-  TrendingUp, 
-  Users, 
-  MessageSquare, 
-  Zap,
-  BarChart3,
-  Settings,
-  Code,
-  Layers,
-  Palette,
-  ArrowUp,
-  ArrowDown,
-  Minus,
-  Star,
-  Clock,
-  Filter,
-  Target,
-  Sparkles
-} from 'lucide-react';
 import weekData from '../sample-data/week_28_2025.json';
 import GoogleSheetsChart from './GoogleSheetsChart';
 import InsightsHeader from './InsightsHeader';
@@ -40,29 +19,6 @@ const InsightsBoard = () => {
       newExpanded.add(themeTitle);
     }
     setExpandedThemes(newExpanded);
-  };
-
-  const iconMapping: Record<string, React.ElementType> = {
-    'Palette': Palette,
-    'Settings': Settings,
-    'Code': Code,
-    'Layers': Layers,
-    'BarChart3': BarChart3,
-    'TrendingUp': TrendingUp,
-    'Users': Users,
-    'MessageSquare': MessageSquare,
-    'Zap': Zap,
-    'Calendar': Calendar,
-    'Target': Target,
-    'Filter': Filter,
-    'Star': Star,
-    'Clock': Clock,
-    'Sparkles': Sparkles,
-    'ExternalLink': ExternalLink
-  };
-
-  const getIconComponent = (iconName: string): React.ElementType => {
-    return iconMapping[iconName] || Settings;
   };
 
   return (
