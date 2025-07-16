@@ -1,0 +1,294 @@
+{
+  "week": {
+    "year": 2025,
+    "iso_week": 28,
+    "date_range": {
+      "start": "2025-07-07",
+      "end": "2025-07-14"
+    },
+    "label": "Week of July 7–14"
+  },
+  "overview": {
+    "summary": "This week's conversation around Editor V4 feels like a turning point. Users are no longer evaluating potential — they're testing trust. There's genuine excitement about the code output and styling foundations, but it's tempered by repeated frustrations: missing features, unintuitive UI behavior, and friction points that feel like they shouldn't still be there.",
+    "total_entries": 156,
+    "total_mentions": 89,
+    "avg_sentiment": -0.2
+  },
+  "features_discussed": [
+    {
+      "feature": "Styling System",
+      "icon": "Palette",
+      "color": "text-blue-600",
+      "total_mentions": 8,
+      "avg_sentiment": -0.05,
+      "subthemes": [
+        {
+          "title": "Obfuscated Class Names Frustrate Developers",
+          "mentions": 5,
+          "sentiment": -0.7,
+          "description": "The shift to a class-based styling system is widely seen as the right direction, but developers are pushing back hard on Elementor's use of random obfuscated class names in the frontend. The inability to target or understand generated selectors breaks familiar debugging flows and limits extensibility.",
+          "quotes": [
+            {
+              "text": "I pray and hope Elementor… please do not let this be the case.",
+              "relevance_score": 0.95,
+              "entry_id": "66b8f1234567890abcdef123"
+            },
+            {
+              "text": "This alone makes it harder than Bricks.",
+              "relevance_score": 0.88,
+              "entry_id": "66b8f1234567890abcdef124"
+            },
+            {
+              "text": "I can't debug this easily — I need to know what class I'm working with.",
+              "relevance_score": 0.82,
+              "entry_id": "66b8f1234567890abcdef125"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Watch creator at 13:41",
+              "url": "https://youtube.com/watch?v=dQw4w9WgXcQ&t=821",
+              "type": "youtube",
+              "timestamp": "13:41"
+            },
+            {
+              "title": "Reddit: 'This breaks my workflow' thread",
+              "url": "https://reddit.com/r/elementor/comments/1e8kj2l/v4_class_names_breaking_workflow",
+              "type": "reddit"
+            }
+          ]
+        },
+        {
+          "title": "Global Class Edits Are a Hit",
+          "mentions": 3,
+          "sentiment": 0.6,
+          "description": "Despite the frustration with naming, the concept of reusable global classes is landing well. Creators highlight how changing a class updates all elements instantly — a shift toward scalable design systems.",
+          "quotes": [
+            {
+              "text": "This is how it should've always worked.",
+              "relevance_score": 0.91,
+              "entry_id": "66b8f1234567890abcdef126"
+            },
+            {
+              "text": "Feels like a proper builder now.",
+              "relevance_score": 0.85,
+              "entry_id": "66b8f1234567890abcdef127"
+            }
+          ],
+          "sources": [
+            {
+              "title": "YouTube: Global Classes Deep Dive",
+              "url": "https://youtube.com/watch?v=example123",
+              "type": "youtube"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feature": "UI & Workflow", 
+      "icon": "Settings",
+      "color": "text-purple-600",
+      "total_mentions": 7,
+      "avg_sentiment": 0.05,
+      "subthemes": [
+        {
+          "title": "Spacing Controls Are Visually Confusing",
+          "mentions": 4,
+          "sentiment": -0.6,
+          "description": "The current layout of padding/margin controls is drawing criticism. Inputs are arranged horizontally, breaking users' spatial intuition for top/left/right/bottom. The linking icon is subtle to the point of invisibility.",
+          "quotes": [
+            {
+              "text": "Left padding input on the right? Really?",
+              "relevance_score": 0.89,
+              "entry_id": "66b8f1234567890abcdef128"
+            },
+            {
+              "text": "I didn't even realize the spacing was linked.",
+              "relevance_score": 0.84,
+              "entry_id": "66b8f1234567890abcdef129"
+            },
+            {
+              "text": "This layout makes no visual sense.",
+              "relevance_score": 0.78,
+              "entry_id": "66b8f1234567890abcdef130"
+            }
+          ],
+          "sources": [
+            {
+              "title": "UX walk-through breakdown",
+              "url": "https://youtube.com/watch?v=uxbreakdown456",
+              "type": "youtube"
+            }
+          ]
+        },
+        {
+          "title": "Simplified Two-Tab UI Gets Praise",
+          "mentions": 3,
+          "sentiment": 0.7,
+          "description": "Reviewers like the move to a consistent two-tab interface: \"General\" and \"Style.\" It's perceived as cleaner and less overwhelming than the mixed-tab model of Editor V3.",
+          "quotes": [
+            {
+              "text": "It feels like a UI reset — in a good way.",
+              "relevance_score": 0.87,
+              "entry_id": "66b8f1234567890abcdef131"
+            },
+            {
+              "text": "Finally, some consistency.",
+              "relevance_score": 0.81,
+              "entry_id": "66b8f1234567890abcdef132"
+            }
+          ],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "feature": "Missing Features",
+      "icon": "Layers", 
+      "color": "text-orange-600",
+      "total_mentions": 8,
+      "avg_sentiment": -0.8,
+      "subthemes": [
+        {
+          "title": "Variables Remain the Most Requested",
+          "mentions": 8,
+          "sentiment": -0.8,
+          "description": "For the third week in a row, variables are the most talked-about missing feature. Creators repeatedly expected them to ship with the alpha, especially given the class-based foundation. The lack of design tokens is limiting early adoption.",
+          "quotes": [
+            {
+              "text": "We're designing blind without variables.",
+              "relevance_score": 0.94,
+              "entry_id": "66b8f1234567890abcdef133"
+            },
+            {
+              "text": "Feels incomplete. Like the foundation is there, but the roof's missing.",
+              "relevance_score": 0.90,
+              "entry_id": "66b8f1234567890abcdef134"
+            },
+            {
+              "text": "Every time I go to create a color class, I remember I can't.",
+              "relevance_score": 0.86,
+              "entry_id": "66b8f1234567890abcdef135"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Watch creator feedback at 08:12",
+              "url": "https://youtube.com/watch?v=variables789&t=492",
+              "type": "youtube",
+              "timestamp": "08:12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feature": "Developer Experience",
+      "icon": "Code",
+      "color": "text-green-600", 
+      "total_mentions": 3,
+      "avg_sentiment": -0.6,
+      "subthemes": [
+        {
+          "title": "No Access to Add Custom Class Names",
+          "mentions": 3,
+          "sentiment": -0.6,
+          "description": "Multiple creators noted the inability to assign custom class names or IDs to atomic elements. While the system supports reusable classes, the missing input field blocks workflows involving third-party frameworks or semantic structure.",
+          "quotes": [
+            {
+              "text": "Where's the field? I just want to add my own class.",
+              "relevance_score": 0.92,
+              "entry_id": "66b8f1234567890abcdef136"
+            },
+            {
+              "text": "This matters if you're working with anything external.",
+              "relevance_score": 0.88,
+              "entry_id": "66b8f1234567890abcdef137"
+            },
+            {
+              "text": "You can't even set an ID? That's a problem.",
+              "relevance_score": 0.83,
+              "entry_id": "66b8f1234567890abcdef138"
+            }
+          ],
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "emerging_signals": [
+    {
+      "title": "SVG Widget Frustration Spikes",
+      "mentions": 4,
+      "sentiment": -0.5,
+      "description": "The SVG widget drew heat this week for lacking any icon library or inline support. Users expected to browse assets like Font Awesome. Instead, they're told to upload SVGs manually — a jarring experience for many.",
+      "first_surfaced_this_week": true,
+      "quotes": [
+        {
+          "text": "No icon library? Really?",
+          "relevance_score": 0.90,
+          "entry_id": "66b8f1234567890abcdef139"
+        },
+        {
+          "text": "Why would I upload files for something every builder has built-in?",
+          "relevance_score": 0.85,
+          "entry_id": "66b8f1234567890abcdef140"
+        }
+      ],
+      "sources": [
+        {
+          "title": "SVG Widget Review Thread",
+          "url": "https://reddit.com/r/elementor/comments/svg_widget_issues",
+          "type": "reddit"
+        }
+      ]
+    },
+    {
+      "title": "Typography Inheritance Issues",
+      "mentions": 2,
+      "sentiment": -0.4,
+      "description": "A few creators noticed that child elements — especially headings — aren't inheriting font weights and sizes correctly from container styles.",
+      "first_surfaced_this_week": false,
+      "quotes": [
+        {
+          "text": "My H2 isn't picking up the container's font weight.",
+          "relevance_score": 0.87,
+          "entry_id": "66b8f1234567890abcdef141"
+        },
+        {
+          "text": "It looks like styles are breaking on cascade.",
+          "relevance_score": 0.82,
+          "entry_id": "66b8f1234567890abcdef142"
+        }
+      ],
+      "sources": []
+    }
+  ],
+  "archive_weeks": [
+    {
+      "year": 2025,
+      "iso_week": 28,
+      "label": "Week of July 7–14",
+      "current": true
+    },
+    {
+      "year": 2025,
+      "iso_week": 27,
+      "label": "Week of June 30–July 6", 
+      "current": false
+    },
+    {
+      "year": 2025,
+      "iso_week": 26,
+      "label": "Week of June 23–29",
+      "current": false
+    },
+    {
+      "year": 2025,
+      "iso_week": 25,
+      "label": "Week of June 16–22",
+      "current": false
+    }
+  ]
+}
