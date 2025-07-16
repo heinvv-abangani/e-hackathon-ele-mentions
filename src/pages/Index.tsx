@@ -1,7 +1,8 @@
 import InsightsBoard from "@/components/InsightsBoard";
+import InsightsBoardWithStyledTabs from "@/components/InsightsBoardWithStyledTabs";
 
 const Index = () => {
-  return <InsightsBoard />;
+  return <InsightsBoardWithStyledTabs />;
 };
 
 export default Index;
