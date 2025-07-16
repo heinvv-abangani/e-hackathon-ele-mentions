@@ -23,6 +23,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import weekData from '../sample-data/week_28_2025.json';
+import GoogleSheetsChart from './GoogleSheetsChart';
 
 interface SubTheme {
   title: string;
@@ -140,6 +141,12 @@ const InsightsBoard = () => {
             </blockquote>
           </div>
         </section>
+
+        <GoogleSheetsChart
+          title="Analytics Dashboard"
+          description="Real-time data visualization from our tracking spreadsheet, automatically updated as new feedback is processed."
+          iframeSrc="https://docs.google.com/spreadsheets/d/e/2PACX-1vRiXuMSx6P8x5ycvycy0vQ16IpsNu24gwPH-zwOGXho755qkKRWvBrCqKHe5HBLoWfkC-FNAWZiE2uZ/pubchart?oid=852387257&format=interactive"
+        />
 
         <section className="mb-section">
           <div className="space-y-8">
