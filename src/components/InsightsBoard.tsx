@@ -216,7 +216,7 @@ const InsightsBoard = () => {
             <div className="flex items-center justify-center gap-3 mb-6">
               <BarChart3 className="w-12 h-12 text-primary-foreground pulse-glow" />
               <h1 className="text-6xl font-bold text-primary-foreground tracking-tight">
-                Ele-Mentions
+                Ele-Mentions test123
               </h1>
             </div>
             <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
