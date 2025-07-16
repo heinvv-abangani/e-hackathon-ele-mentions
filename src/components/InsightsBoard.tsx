@@ -13,7 +13,10 @@ const TABS = [
 ];
 
 const InsightsBoard = () => {
-  const [expandedThemes, setExpandedThemes] = useState<Set<string>>(new Set(['Styling System']));
+  const firstTheme = weekData.features_discussed[0]?.feature;
+  const [expandedThemes, setExpandedThemes] = useState<Set<string>>(
+    firstTheme ? new Set([firstTheme]) : new Set()
+  );
   const [activeTab, setActiveTab] = useState('insights');
 
   const toggleTheme = (themeTitle: string) => {
