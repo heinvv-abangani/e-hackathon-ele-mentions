@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Professional color palette with modern gradients */
+    --background: 0 0% 100%;
+    --foreground: 224 12% 9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 12% 9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 12% 9%;
+
+    /* Dynamic primary colors */
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-muted: 262 90% 97%;
+    --primary-dark: 262 83% 45%;
+
+    /* Professional secondary palette */
+    --secondary: 216 12% 84%;
+    --secondary-foreground: 224 12% 9%;
+    --secondary-dark: 216 25% 25%;
+
+    /* Sophisticated muted tones */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --muted-dark: 220 14% 89%;
+
+    /* Modern accent colors */
+    --accent: 178 60% 48%;
+    --accent-foreground: 0 0% 100%;
+    --accent-muted: 178 60% 95%;
+
+    /* Semantic colors with professional feel */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Enhanced neutral palette */
+    --neutral-50: 220 14% 96%;
+    --neutral-100: 220 14% 91%;
+    --neutral-200: 220 13% 83%;
+    --neutral-300: 220 9% 68%;
+    --neutral-400: 220 9% 46%;
+    --neutral-500: 220 9% 39%;
+    --neutral-600: 220 9% 32%;
+    --neutral-700: 220 9% 26%;
+    --neutral-800: 222 13% 16%;
+    --neutral-900: 224 12% 9%;
+
+    /* Dynamic sentiment colors */
+    --sentiment-positive: 142 84% 28%;
+    --sentiment-positive-bg: 142 76% 95%;
+    --sentiment-negative: 0 84% 55%;
+    --sentiment-negative-bg: 0 100% 96%;
+    --sentiment-neutral: 220 9% 46%;
+    --sentiment-neutral-bg: 220 14% 96%;
+
+    /* Professional spacing system */
+    --content-width: 72rem;
+    --section-gap: 4rem;
+    --element-gap: 1.75rem;
+
+    /* Modern borders and interactions */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 262 83% 58%;
+
+    /* Advanced shadows for depth */
+    --shadow-xs: 0 1px 2px 0 hsl(220 13% 9% / 0.05);
+    --shadow-sm: 0 1px 3px 0 hsl(220 13% 9% / 0.1), 0 1px 2px -1px hsl(220 13% 9% / 0.1);
+    --shadow-md: 0 4px 6px -1px hsl(220 13% 9% / 0.1), 0 2px 4px -2px hsl(220 13% 9% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(220 13% 9% / 0.1), 0 4px 6px -4px hsl(220 13% 9% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(220 13% 9% / 0.1), 0 8px 10px -6px hsl(220 13% 9% / 0.1);
+    --shadow-2xl: 0 25px 50px -12px hsl(220 13% 9% / 0.25);
+
+    /* Dynamic gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(178 60% 35%));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--neutral-50)));
+    --gradient-section: linear-gradient(135deg, hsl(var(--primary-muted)), hsl(var(--accent-muted)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+
+    --radius: 0.875rem;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Editorial typography hierarchy */
+  .prose-editorial {
+    @apply text-foreground leading-relaxed;
+  }
+  
+  .prose-editorial h1 {
+    @apply text-4xl font-bold text-foreground mb-4 tracking-tight;
+  }
+  
+  .prose-editorial h2 {
+    @apply text-2xl font-semibold text-foreground mb-3 tracking-tight;
+  }
+  
+  .prose-editorial h3 {
+    @apply text-lg font-medium text-foreground mb-2;
+  }
+  
+  .prose-editorial p {
+    @apply text-base text-foreground leading-relaxed mb-4;
+  }
+  
+  .prose-editorial blockquote {
+    @apply text-lg italic text-muted-foreground border-l-4 border-primary pl-6 my-6;
+  }
+}
+
+@layer components {
+  /* Professional component styles with modern animations */
+  .insights-header {
+    @apply relative overflow-hidden rounded-2xl border border-border bg-gradient-hero shadow-2xl;
+  }
+  
+  .insights-header::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10;
+  }
+  
+  .section-card {
+    @apply relative rounded-2xl border border-border bg-card shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1;
+  }
+  
+  .section-card-alt {
+    @apply relative rounded-2xl border border-border bg-gradient-to-br from-muted via-card to-muted/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1;
+  }
+  
+  .theme-card {
+    @apply relative rounded-xl border border-border/50 bg-card/80 backdrop-blur-sm shadow-md hover:shadow-lg transition-all duration-300;
+  }
+  
+  .theme-card::before {
+    content: '';
+    @apply absolute inset-0 rounded-xl bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+  }
+  
+  .quote-block {
+    @apply relative bg-gradient-to-r from-neutral-50 to-neutral-100/50 border-l-4 border-primary p-4 rounded-r-xl italic text-neutral-700 shadow-sm hover:shadow-md transition-all duration-200;
+  }
+  
+  .quote-block::before {
+    content: '"';
+    @apply absolute -top-2 -left-1 text-4xl text-primary/30 font-serif;
+  }
+  
+  .sentiment-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold shadow-sm transition-all duration-200 hover:scale-105;
+  }
+  
+  .sentiment-positive {
+    @apply bg-sentiment-positive-bg text-sentiment-positive border border-sentiment-positive/20;
+  }
+  
+  .sentiment-negative {
+    @apply bg-sentiment-negative-bg text-sentiment-negative border border-sentiment-negative/20;
+  }
+  
+  .sentiment-neutral {
+    @apply bg-sentiment-neutral-bg text-sentiment-neutral border border-sentiment-neutral/20;
+  }
+  
+  .link-modern {
+    @apply inline-flex items-center gap-1.5 text-primary hover:text-primary/80 transition-all duration-200 underline decoration-primary/30 hover:decoration-primary/60 underline-offset-2 font-medium hover:translate-x-0.5;
+  }
+  
+  .emerging-signal {
+    @apply relative pl-6 before:absolute before:-left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-accent before:to-primary before:rounded-full before:animate-pulse;
+  }
+  
+  .archive-button {
+    @apply px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+  
+  .archive-button-active {
+    @apply bg-gradient-primary text-primary-foreground shadow-lg hover:shadow-xl;
+  }
+  
+  .archive-button-inactive {
+    @apply bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground border border-border;
+  }
+  
+  .floating-element {
+    @apply transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  
+  .icon-gradient {
+    @apply bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply bg-card/80 backdrop-blur-lg border border-border/50;
+  }
+  
+  .pulse-glow {
+    @apply animate-pulse drop-shadow-lg;
+  }
+  
+  .smooth-appear {
+    @apply animate-in fade-in-0 slide-in-from-bottom-4 duration-500;
+  }
+}
